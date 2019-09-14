@@ -17,10 +17,9 @@
   "dependencies": {
     "discord.js": "^11.4.2",
     "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
     "lzma-native": "^4.0.5",
-    "node-pre-gyp": "^0.13.0",
     "opusscript": "0.0.6",
-    "ytdl-core": "^0.29.1",
-	  "ffmpeg-node-binaries": "4.0.3"
+    "ytdl-core": "^0.29.1"
   }
 }
