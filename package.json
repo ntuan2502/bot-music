@@ -17,9 +17,8 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "ffmpeg": "0.0.4",
-    "ffmpeg-node-binaries": "^4.0.3",
-    "graceful-fs": "^4.2.2",
-    "nopt": "^4.0.1",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-pre-gyp": "^0.13.0",
     "opusscript": "0.0.6",
     "ytdl-core": "^0.29.7"
   }
