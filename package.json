@@ -20,6 +20,7 @@
     "lzma-native": "^4.0.5",
     "node-pre-gyp": "^0.13.0",
     "opusscript": "0.0.6",
-    "ytdl-core": "^0.29.1"
+    "ytdl-core": "^0.29.1",
+	  "ffmpeg-node-binaries": "4.0.3"
   }
 }
