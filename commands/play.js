@@ -18,7 +18,7 @@ module.exports = {
 			return message.channel.send('Vui lòng cấp quyền để mở và phát nhạc!');
 		}
 
-		const songInfo = await ytdl.getInfo(args[1]);
+		const songInfo = await ytdl.getInfo(args[1], {quality : 'highestaudio'});
 		const song = {
 			title: songInfo.title,
 			url: songInfo.video_url,
@@ -42,8 +42,8 @@ module.exports = {
 				var connection = await voiceChannel.join();
 				queueContruct.connection = connection;
 				this.play(message, queueContruct.songs[0]);
-				console.log(`Đang phát ${song.title}!`);
-				message.channel.send(`Đang phát ${song.title}!`);
+				console.log(`Đang phát "${song.title}"!`);
+				message.channel.send(`Đang phát "${song.title}"!`);
 			} catch (err) {
 				console.log(err);
 				queue.delete(message.guild.id);
@@ -51,8 +51,8 @@ module.exports = {
 			}
 		} else {
 			serverQueue.songs.push(song);
-			console.log(`${song.title} đã được thêm vào hàng chờ!`);
-			return message.channel.send(`${song.title} đã được thêm vào hàng chờ!`);
+			console.log(`"${song.title}" đã được thêm vào hàng chờ!`);
+			return message.channel.send(`"${song.title}" đã được thêm vào hàng chờ!`);
 		}
 	},
 
