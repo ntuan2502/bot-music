@@ -16,7 +16,7 @@
     "music",
     "bot"
   ],
-  "author": "Gabriel Tanner",
+  "author": "NAT",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.4.2",
