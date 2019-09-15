@@ -1,10 +1,6 @@
 {
   "name": "music-bot",
   "version": "1.0.0",
-  "engines": {
-    "node": "8.11.3",
-    "npm": "6.11.3"
-  },
   "repository": "https://github.com/TannerGabriel/discord-music-bot.git",
   "description": "A simple discord music bot",
   "main": "index.js",
@@ -16,21 +12,13 @@
     "music",
     "bot"
   ],
-  "author": "NAT",
+  "author": "Gabriel Tanner",
   "license": "MIT",
   "dependencies": {
-    "@discordjs/uws": "^10.149.0",
-    "bufferutil": "^4.0.1",
-    "discord.js": "^11.5.1",
-    "erlpack": "github:discordapp/erlpack",
+    "discord.js": "^11.4.2",
     "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
-    "libsodium-wrappers": "^0.7.5",
-    "lzma-native": "^4.0.5",
-    "node-opus": "^0.2.9",
     "opusscript": "0.0.6",
-    "snekfetch": "^3.6.4",
-    "sodium": "^3.0.2",
     "ytdl-core": "^0.29.1"
   }
 }
