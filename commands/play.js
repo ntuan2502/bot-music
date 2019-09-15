@@ -18,7 +18,7 @@ module.exports = {
 			return message.channel.send('Vui lòng cấp quyền để mở và phát nhạc!');
 		}
 
-		const songInfo = await ytdl.getInfo(args[1], {quality : 'highestaudio'});
+		const songInfo = await ytdl.getInfo(args[1], { quality: 'highestaudio' });
 		const song = {
 			title: songInfo.title,
 			url: songInfo.video_url,
@@ -76,7 +76,7 @@ module.exports = {
 					message.channel.send(`Đang phát "${serverQueue.songs[0].title}!"`);
 					console.log(`Đang phát "${serverQueue.songs[0].title}!"`);
 				}
-				else{
+				else {
 					message.channel.send(`Danh sách phát hiện tại đang trống!`);
 					console.log(`Danh sách phát hiện tại đang trống!`);
 				}
