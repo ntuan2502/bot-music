@@ -4,9 +4,10 @@ module.exports = {
 	name: 'time',
 	description: 'Lấy thời gian hiện tại.',
 	execute(message) {
-		var vi_Time = new Date().toLocaleString("en-US", { hour: '2-digit', hour12: false, timeZone: "Asia/Ho_Chi_Minh" });
-		vi_Time = new Date(vi_Time);
-		var dateTime = vi_Time.toLocaleString();
+		var today = new Date().toLocaleString("en-US", {hour: '2-digit', timeZone: "Asia/Ho_Chi_Minh"});
+		var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var dateTime = time + ' ' + date;
 		console.log(`Bây giờ là ${dateTime}`);
 		message.channel.send(`Bây giờ là ${dateTime}`);
 	},
